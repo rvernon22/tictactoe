@@ -123,6 +123,7 @@ JFrame frame = new JFrame();
 	public void winnerCheck()
 	{
 			//checking X win conditions
+			//TODO try to find a cleaner way to do this
 			if(
 					(slots[0].getText()=="X") &&
 					(slots[1].getText()=="X") &&
@@ -259,7 +260,7 @@ JFrame frame = new JFrame();
 			}
 	}
 	
-	public void oWins(int choice1, int choice2, int choice3) 
+	public void oWins(int choice1, int choice2, int choice3) //changes winning slots to green, disables all slots, and declares a winner
 	{
 		slots[choice1].setBackground(Color.GREEN);
 		slots[choice2].setBackground(Color.GREEN);
